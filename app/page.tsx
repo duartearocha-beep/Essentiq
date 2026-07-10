@@ -31,7 +31,7 @@ export default function Home() {
       <ExperienceSection
         subtitle="Discotecas"
         title="A energia da noite também tem aroma."
-        video="/videos/afastado.mp4"
+        video="/videos/disco.mp4"
         reverse
         text="A música, a luz e o movimento criam energia. O aroma completa a experiência e torna o espaço mais reconhecível."
         points={[
