@@ -20,7 +20,7 @@ export default function Home() {
         subtitle="Bares"
         title="Ambientes que ficam na memória."
         video="/videos/bar.mp4"
-        text="Criamos uma identidade olfativa envolvente para bares que querem marcar a experiência dos seus clientes desde o primeiro momento."
+        text="Criamos soluções de aromatização profissional e identidade olfativa para bares que pretendem proporcionar uma experiência mais envolvente e memorável aos seus clientes."
         points={[
           "Ambiente mais sofisticado",
           "Experiência sensorial memorável",
@@ -33,7 +33,7 @@ export default function Home() {
         title="A energia da noite também tem aroma."
         video="/videos/disco.mp4"
         reverse
-        text="A música, a luz e o movimento criam energia. O aroma completa a experiência e torna o espaço mais reconhecível."
+        text="Através do marketing olfativo, o aroma junta-se à música, à iluminação e ao movimento para reforçar a identidade da discoteca e tornar o espaço mais reconhecível."
         points={[
           "Identidade olfativa do espaço",
           "Aroma consistente durante a noite",
@@ -45,7 +45,7 @@ export default function Home() {
         subtitle="Eventos"
         title="Cada detalhe torna o momento inesquecível."
         video="/videos/evento.mp4"
-        text="Em eventos, o aroma ajuda a criar uma atmosfera única e reforça a sensação de cuidado, exclusividade e presença."
+        text="A aromatização de eventos ajuda a criar uma atmosfera única e reforça a sensação de cuidado, exclusividade e presença em cada ocasião."
         points={[
           "Ideal para eventos privados e corporativos",
           "Solução temporária ou recorrente",
