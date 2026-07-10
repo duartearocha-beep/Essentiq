@@ -90,17 +90,35 @@ export const metadata: Metadata = {
 
   category: "business",
 
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
-  },
+  // Só mantém esta parte quando os ficheiros existirem dentro de app/
+  // icons: {
+  //   icon: "/favicon.ico",
+  //   shortcut: "/favicon.ico",
+  //   apple: "/apple-touch-icon.png",
+  // },
 };
 
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   themeColor: "#17120f",
+};
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Essentiq",
+  url: "https://www.essentiq.pt",
+  logo: "https://www.essentiq.pt/logo.jpeg",
+  description:
+    "Soluções premium de fragrância ambiente para hotéis, bares, restaurantes, eventos e espaços comerciais.",
+  email: "cruz.agripino.lda@gmail.com",
+  telephone: "+351962783456",
+  sameAs: ["https://www.instagram.com/essentiq_pt/"],
+  address: {
+    "@type": "PostalAddress",
+    addressCountry: "PT",
+  },
 };
 
 export default function RootLayout({
@@ -110,7 +128,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-PT">
-      <body>{children}</body>
+      <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(structuredData).replace(/</g, "\\u003c"),
+          }}
+        />
+
+        {children}
+      </body>
     </html>
   );
 }
